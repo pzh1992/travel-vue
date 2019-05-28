@@ -1,30 +1,21 @@
 <template>
   <div>
-    <home-header class='header'>
-
-    </home-header>
+    <home-header class='header'></home-header>
+    <home-swiper></home-swiper>
   </div>
 </template>
 
 <script>
 import HomeHeader from './components/Header'
+import HomeSwiper from './components/Swiper'
 export default{
   name: 'Home',
   components: {
-    HomeHeader
+    HomeHeader,
+    HomeSwiper
   }
 }
 </script>
 
 <style lang='stylus' scoped>
-  .header
-    height: .86rem
-    .header-left
-      width: .64rem
-      float: left
-    .header-input
-      flex: 1
-    .header-right
-      width: 1.24rem
-      float: tight
 </style>
